@@ -1,0 +1,17 @@
+#Scientific name	Assembly accession	Busco lineage	name
+Branchiostoma belcheri	GCA_001625305.1	metazoa_odb12	Bbe
+Ciona intestinalis	GCA_000224145.2	metazoa_odb12	Cin
+Eptatretus burgeri	GCA_024346535.1	vertebrata_odb12	Ebu
+Eptatretus burgeri	GCA_900186335.3	vertebrata_odb12	Ebu2
+Lampetra planeri	GCA_965212315.1	vertebrata_odb12	Lpl
+Petromyzon marinus	GCA_010993605.1	vertebrata_odb12	Pma
+Callorhinchus milii	GCA_018977255.1	vertebrata_odb12	Cmi
+Rhincodon typus	GCA_021869965.1	vertebrata_odb12	Rty
+Lepisosteus oculatus	GCA_040954835.1	actinopterygii_odb12	Loc
+Oreochromis niloticus	GCA_001858045.3	actinopterygii_odb12	Oni
+Takifugu rubripes	GCA_901000725.3	actinopterygii_odb12	Tru
+Latimeria chalumnae	GCA_037176945.1	vertebrata_odb12	Lch
+Xenopus tropicalis	GCA_000004195.4	tetrapoda_odb12	Xtr
+Gallus gallus	GCA_016699485.1	galloanserae_odb12	Gga
+Mus musculus	GCA_000001635.9	rodentia_odb12	Mmu
+Homo sapiens	GCF_000001405.40	primates_odb12	Hsa

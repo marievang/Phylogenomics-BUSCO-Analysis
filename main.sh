@@ -26,6 +26,11 @@ set -x
 WORKDIR=$(pwd)
 LOGDIR="$WORKDIR/logs"
 OUTDIR="$WORKDIR/results"
+DATADIR="$WORKDIR/genomes"
+BUSCO_DIR="$WORKDIR/busco_results"
+MAFFT_DIR="$WORKDIR/mafft"
+TRIMAL_DIR="$WORKDIR/trimal"
+TREES_DIR="$WORKDIR/trees"
 
 # Create directories if they don't exist
 mkdir -p "$LOGDIR" "$OUTDIR"
@@ -35,7 +40,7 @@ mkdir -p "$LOGDIR" "$OUTDIR"
 # -------------------------------
 
 # Example input variables (adjust as needed)
-INPUT_SEQS="input_sequences.fasta"
+INPUT_SEQS="genome_names.txt"
 GENE_TREES="cleaned_gene_trees.tre"
 
 # -------------------------------
@@ -63,33 +68,52 @@ log_step() {
 # 5. Pipeline steps
 # -------------------------------
 
-# Example: 1. Get sequences
-log_step "Running sequence retrieval..."
+#  Get sequences
+log_step "Get sequence using busco."
 python "$GET_SEQS" "$INPUT_SEQS" > "$LOGDIR/get_seqs.log" 2>&1
 
-# Example: 2. Multiple sequence alignment (MAFFT)
+# Multiple sequence alignment (MAFFT)
 log_step "Running MAFFT alignment..."
 bash "$RUN_MAFFT" > "$LOGDIR/mafft.log" 2>&1
 
-# Example: 3. Trimming alignments
+#Trimming alignments
 log_step "Running Trimal..."
 bash "$RUN_TRIMAL" > "$LOGDIR/trimal.log" 2>&1
 
-# Example: 4. Gene tree inference
+#Gene tree inference
 log_step "Running FastTree..."
 bash "$RUN_FASTTREE" > "$LOGDIR/fasttree.log" 2>&1
 
-# Example: 5. Species tree inference
+# Species tree inference
 log_step "Running WASTRAL..."
 bash "$RUN_WASTRAL" > "$LOGDIR/wastral.log" 2>&1
 
-# Example: 6. Plot results
+# Plot results
 log_step "Generating plots..."
 python "$PLOT_RESULTS" > "$LOGDIR/plot.log" 2>&1
 
-# -------------------------------
-# 6. Wrap up
-# -------------------------------
+
 
 log_step "Pipeline completed successfully!"
 echo "Results saved in: $OUTDIR"
+
+#==========================================================
+#!/usr/bin/env bash
+#set -e
+
+#echo "Running MAFFT..."
+#bash run_mafft.sh > logs/mafft.log 2>&1
+
+#echo "Running TrimAl..."
+#bash run_trimal.sh > logs/trimal.log 2>&1
+
+#echo "Running FastTree..."
+#bash run_fasttree.sh > logs/fasttree.log 2>&1
+
+#echo "Running WASTRAL..."
+#bash run_wastral.sh > logs/wastral.log 2>&1
+
+#echo "Plotting results..."
+#python plot.py > logs/plot.log 2>&1
+
+#echo "Pipeline complete!"
