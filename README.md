@@ -7,8 +7,8 @@ The workflow contains scripts about:
 3. Inferring gene trees (FastTree,IQ-TREE) and species tree (wastraL)
 4. Plotting unique sequence from the BUSCO results
 
-   All the steps are summarizes in a main.sh script which ensures reproducibility and efficiency.
-   A conda environment is used for the analysis.
+All the steps are summarizes in a main.sh script which ensures reproducibility and efficiency.
+A conda environment is used for the analysis.
 Install dependencies via : requirements.txt
 
 
