@@ -18,8 +18,8 @@ The analysis contains the four following steps.
 * **TrimAl:** Removes poorly aligned regions  to reduce noise.
 
 ### 3. Tree Inference
-* **Gene Trees:** Infers individual gene trees using **FastTree** (for speed) or **IQ-TREE** (for accuracy).
-* **Species Tree:** Coalesces the gene trees into a final species tree using **wASTRAL** (weighted ASTRAL) to account for gene discordance.
+* **Gene Trees:** Infers individual gene trees using **FastTree**  or **IQ-TREE** .
+* **Species Tree:** Merges the gene trees into a final species tree using **wASTRAL** (weighted ASTRAL) to account for gene discordance.
 
 ### 4. Visualization
 * Generates plots to visualize the distribution of unique sequences and BUSCO recovery rates across samples.
@@ -36,10 +36,5 @@ The main tools used in this pipeline are:
 * [wASTRAL](https://github.com/chaoszhang/ASTER) (Species Tree)
 * Python 3.x (Scripting & Plotting)
 
-  Install the required Python libraries and tools:
-    ```bash
-    pip install -r requirements.txt
-    # Note: Ensure mafft, trimal, iqtree, etc., are installed in your path 
-    # or install them via conda:
-    # conda install -c bioconda mafft trimal fasttree iqtree aster
-    ```
+  Install the required Python libraries and tools described above.
+  
