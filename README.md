@@ -29,12 +29,13 @@ The analysis contains the four following steps.
 The pipeline relies on a **Conda** environment to manage dependencies. 
 
 ### Dependencies
-The main tools used in this pipeline are:
-* [MAFFT](https://mafft.cbrc.jp/alignment/software/) (Alignment)
-* [TrimAl](http://trimal.cgenomics.org/) (Trimming)
-* [FastTree](http://www.microbesonline.org/fasttree/) / [IQ-TREE](http://www.iqtree.org/) (Gene Trees)
-* [wASTRAL](https://github.com/chaoszhang/ASTER) (Species Tree)
-* Python 3.x (Scripting & Plotting)
+The main tools used in this pipeline are provided, with their tested versions:
+* [BUSCO](https://busco.ezlab.org/) v5.8.0 (Benchmarking Universal Single-Copy Orthologs)
+* [MAFFT](https://mafft.cbrc.jp/alignment/software/) v7.526 (Alignment)
+* [TrimAl](http://trimal.cgenomics.org/) v1.5.0 (Trimming)
+* [FastTree](http://www.microbesonline.org/fasttree/) v2.1.11 / [IQ-TREE](http://www.iqtree.org/) v3.0.1 (Gene Trees)
+* [wASTRAL](https://github.com/chaoszhang/ASTER) v1.22 (Species Tree)
+* Python 3.12.11 (Scripting & Plotting)
 
   Install the required Python libraries and tools described above.
   
