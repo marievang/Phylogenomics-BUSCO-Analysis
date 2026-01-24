@@ -36,21 +36,7 @@ The main tools used in this pipeline are:
 * [wASTRAL](https://github.com/chaoszhang/ASTER) (Species Tree)
 * Python 3.x (Scripting & Plotting)
 
-##  Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/your_username/hagfish-phylogenomics.git](https://github.com/your_username/hagfish-phylogenomics.git)
-    cd hagfish-phylogenomics
-    ```
-
-2.  Create and activate the Conda environment:
-    ```bash
-    conda create -n phylogenomics python=3.9
-    conda activate phylogenomics
-    ```
-
-3.  Install the required Python libraries and tools:
+  Install the required Python libraries and tools:
     ```bash
     pip install -r requirements.txt
     # Note: Ensure mafft, trimal, iqtree, etc., are installed in your path 
