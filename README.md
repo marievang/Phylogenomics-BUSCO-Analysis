@@ -1,8 +1,8 @@
-# Hagfish Phylogenomics Pipeline 
+# Phylogenomics Pipeline Using BUSCO genes 
 
 > A phylogenomics workflow for processing BUSCO sequences, inferring gene trees, and reconstructing species trees using wASTRAL.
 
-This repository contains a pipeline designed to automate the phylogenomic analysis of Hagfish (and other species). It takes **BUSCO** output results as input and performs the complete downstream analysis: from extracting single-copy orthologs to multiple sequence alignment, trimming, and final species tree inference.
+This repository contains a pipeline designed to automate phylogenomic analysis and species tree creation using Benchmarking Universal Single-Copy Orthologs (BUSCO). It uses the **BUSCO** output as input and performs the complete downstream analysis: from extracting single-copy orthologs to multiple sequence alignment, trimming, and the final species tree inference. The pipeline was originally created for the analysis of several vertebrate species.
 
 ## Pipeline Workflow
 
